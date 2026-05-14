@@ -24,6 +24,60 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Certificate Cards */
+        .cert-card {
+            background: #fff;
+            border: 2px solid #dee2e6;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .cert-card:hover {
+            border-color: #007bff;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,123,255,0.15);
+        }
+        .cert-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        .cert-icon i {
+            font-size: 28px;
+            color: #fff;
+        }
+        .cert-badge {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .cert-card h5 {
+            font-weight: 700;
+            color: #343a40;
+            margin-bottom: 8px;
+        }
+        .cert-card p {
+            color: #6c757d;
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -41,6 +95,7 @@
                 <a href="#about" class="nav-item nav-link">About</a>
                 <a href="#qualification" class="nav-item nav-link">Quality</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#certificates" class="nav-item nav-link">Certificates</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
@@ -79,9 +134,6 @@
                     <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Mohammad Robby</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Web Designer, Web Developer, Backend Developer, Embedded Developer</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="https://drive.google.com/file/d/1z4Bsy3g3FINVo4yN3rHWzYkhTXQdhhbB/view?usp=drivesdk " class="btn btn-outline-light mr-5">Download CV</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +177,7 @@
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -151,7 +203,7 @@
                                 <br><br>
                                 - Proyek Penelitian: Berpartisipasi dalam pengembangan aplikasi web menggunakan Laravel untuk proyek penelitian.
                                 <br>
-                                - Skripsi:Implementasi Peramalan Harga Bahan Baku Menggunakan Metode Trend Moment Berbasis Website.
+                                - Skripsi: Implementasi Peramalan Harga Bahan Baku Menggunakan Metode Trend Moment Berbasis Website.
                                 <br>
                                 - Kegiatan Ekstrakurikuler : Menjadi Asisten Laboratorium Pemrograman Komputer Teknik Informatika 2021 - 2024.
                             </p>
@@ -159,30 +211,29 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="mb-4">My Expericence</h3>
+                    <h3 class="mb-4">My Experience</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Freelance</h5>
-                            <p class="mb-2"><strong>Milkindo</strong> | <small>2023</small></p>
-                            <p>Bekerja sebagai petugas di wahana permainan Milkindo, bertanggung jawab untuk memastikan keselamatan dan kenyamanan pengunjung 
-                                saat menggunakan berbagai fasilitas permainan. Selain itu, saya juga membantu dalam menjaga kebersihan dan ketertiban di area wahana.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Part time</h5>
-                            <p class="mb-2"><strong>Salama Meat Shop</strong> | <small>2023 - 2024</small></p>
-                            <p>Bertugas dalam men-slice dan memotong daging beku sesuai dengan pesanan pelanggan, serta melakukan packing untuk menjaga kualitas 
-                                dan kesegaran produk. Selain itu, saya juga bertanggung jawab dalam mengirimkan pesanan daging beku kepada pelanggan dengan memastikan 
-                                setiap pengiriman tiba tepat waktu dan dalam kondisi yang optimal.
-                            </p>
-                        </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Asisten Laboratorium</h5>
                             <p class="mb-2"><strong>Laboratorium Pemrograman Komputer Teknik Informatika</strong> | <small>2021 - 2024</small></p>
-                            <p> Membantu dosen dalam mempersiapkan materi praktikum pemrograman, serta memberikan bimbingan kepada mahasiswa dalam memahami 
-                                konsep-konsep dasar pemrograman. Selain itu, juga berkontribusi dalam pengelolaan infrastruktur laboratorium</p>
+                            <p>Membantu dosen dalam mempersiapkan materi praktikum pemrograman, serta memberikan bimbingan kepada mahasiswa dalam memahami 
+                                konsep-konsep dasar pemrograman. Selain itu, juga berkontribusi dalam pengelolaan infrastruktur laboratorium.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Technical Support</h5>
+                            <p class="mb-2"><strong>PT Naraya Telematika</strong> | <small>Desember 2024 - Mei 2025</small></p>
+                            <p>Bertanggung jawab dalam menangani permasalahan teknis jaringan dan infrastruktur IT, memberikan dukungan teknis kepada pelanggan, 
+                                serta melakukan troubleshooting dan pemeliharaan perangkat jaringan untuk memastikan operasional berjalan dengan optimal.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Network Operation Center (NOC)</h5>
+                            <p class="mb-2"><strong>PT Naraya Telematika</strong> | <small>Mei 2025 - Sekarang</small></p>
+                            <p>Memantau dan mengelola infrastruktur jaringan secara real-time untuk memastikan ketersediaan dan performa layanan jaringan. 
+                                Bertanggung jawab dalam deteksi dini gangguan jaringan, koordinasi penanganan insiden, serta menjaga kestabilan dan 
+                                keandalan jaringan secara keseluruhan.</p>
                         </div>
                     </div>
                 </div>
@@ -278,6 +329,62 @@
         </div>
     </div>
     <!-- Portfolio End -->
+
+    <!-- Certificates Start -->
+    <div class="container-fluid py-5" id="certificates">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Certs</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Certificates</h1>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                <!-- MTCNA -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <span class="cert-badge">MikroTik</span>
+                        <h5>MikroTik Certified Network Associate</h5>
+                        <p class="text-muted mb-3">MTCNA — Sertifikasi dasar jaringan MikroTik yang mencakup konfigurasi router, manajemen IP, routing, dan keamanan jaringan menggunakan perangkat MikroTik.</p>
+                        <a href="https://drive.google.com/file/d/13p2oHNGrOCwdNKzFQAG0b2QlPdCFpW0d/view?usp=sharing" target="_blank" class="btn btn-primary btn-sm">
+                            <i class="fas fa-eye mr-1"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+                <!-- MTCRE -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <span class="cert-badge">MikroTik</span>
+                        <h5>MikroTik Certified Routing Engineer</h5>
+                        <p class="text-muted mb-3">MTCRE — Sertifikasi tingkat lanjut yang berfokus pada konfigurasi routing dinamis, protokol BGP, OSPF, dan manajemen jaringan kompleks menggunakan RouterOS.</p>
+                        <a href="https://drive.google.com/file/d/1V5fWoVfVkW4C65HreIgaKCDbCgy_Xaji/view?usp=sharing" target="_blank" class="btn btn-primary btn-sm">
+                            <i class="fas fa-eye mr-1"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+                <!-- MTCTCE -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span class="cert-badge">MikroTik</span>
+                        <h5>MikroTik Certified Traffic Control Engineer</h5>
+                        <p class="text-muted mb-3">MTCTCE — Sertifikasi yang berfokus pada manajemen traffic jaringan, QoS, bandwidth management, dan optimasi performa jaringan menggunakan MikroTik.</p>
+                        <a href="https://drive.google.com/file/d/1US6gQZWLxKzcxdpYOWiRQcFNG771Krl3/view?usp=sharing" target="_blank" class="btn btn-primary btn-sm">
+                            <i class="fas fa-eye mr-1"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Certificates End -->
+
     <!-- Contact Start -->
     <div class="container-fluid py-5" id="contact">
         <div class="container">
@@ -302,13 +409,11 @@
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
-
                 <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/mohammad-robby/"><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-light btn-social mr-2" href="https://www.github.com/queenbaee"><i class="fab fa-github"></i></a>
                 <a class="btn btn-light btn-social" href="https://www.instagram.com/robbrobbery"><i class="fab fa-instagram"></i></a>
             </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Made By Love</a>. All Rights Reserved.</a>
-            </p>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Made By Love</a>. All Rights Reserved.</p>
         </div>
     </div>
     <!-- Footer End -->
